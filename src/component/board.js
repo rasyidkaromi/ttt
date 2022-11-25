@@ -32,7 +32,6 @@ const Board = () => {
     const computateAction = (index) => {
         console.log('computateAction')
         const cells = boardRef.current.children
-        // if (data[index - 1] === '' && winner === '') {
         if (winner === '') {
             const current = players === 'A' ? "X" : "O"
             data[index] = current;
